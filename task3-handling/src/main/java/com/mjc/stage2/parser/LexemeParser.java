@@ -29,7 +29,7 @@ public class LexemeParser extends AbstractTextParser {
         String[] lexemes = string.split(LEXEME_REGEX);
         for (String lexeme :
                 lexemes) {
-            AbstractTextComponent component = new TextComponent(TextComponentType.WORD, lexeme);
+            AbstractTextComponent component = new TextComponent(TextComponentType.WORD);
             abstractTextComponent.add(component);
 
             parseWord(component, lexeme);
